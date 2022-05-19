@@ -41,7 +41,7 @@ async function run() {
 
         app.get('/services', async (req, res) => {
             const query = {};
-            const cursor = serviceCollection.find(query)
+            const cursor = serviceCollection.find(query).project({ name: 1 })
             const services = await cursor.toArray()
             res.send(services);
 
@@ -77,10 +77,7 @@ async function run() {
 
         app.get('/booking', verifyJWT, async (req, res) => {
             const patient = req.query.patient;
-
             const decodedEmail = req.decoded.email;
-
-            console.log(patient, decodedEmail)
 
             if (patient === decodedEmail) {
                 const query = { patient: patient }
