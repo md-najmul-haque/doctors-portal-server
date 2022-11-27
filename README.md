@@ -6,7 +6,7 @@ Note - Doctors Portal is a dental hospital website.
  [https://doctors-portal-571de.web.app](https://doctors-portal-571de.web.app/)
 
  ## Live Server Link: 
- [https://radiant-tor-66529.herokuapp.com](https://radiant-tor-66529.herokuapp.com)
+ [https://doctors-portal-server-q0mf.onrender.com](https://doctors-portal-server-q0mf.onrender.com)
 
 ## Website's features and functionalities
 - Designed to take doctor appointments on a suitable date.
